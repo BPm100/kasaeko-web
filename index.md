@@ -1,16 +1,17 @@
 ---
 layout: default
+title: Inicio
 ---
 
-# Bienvenido a KASAÉKO
+# Bienvenido a **KASAÉKO**
 
 > Cocina con conciencia. Descubre nuestros productos sostenibles para tu hogar.
 
-<ul>
+<ul style="list-style:none; padding:0;">
 {% for p in site.data.productos %}
-  <li>
+  <li style="margin-bottom:2rem; border-bottom:1px solid #eee; padding-bottom:1rem;">
     <h2>{{ p.nombre }}</h2>
-    <img src="{{ p.imagen }}" alt="{{ p.nombre }}" width="300">
+    <img src="{{ p.imagen }}" alt="{{ p.nombre }}" style="max-width:300px; display:block; margin-bottom:1rem;">
     <p>{{ p.descripcion }}</p>
     <p><strong>Precio:</strong> {{ p.precio }}</p>
     <button class="snipcart-add-item"
@@ -19,7 +20,7 @@ layout: default
       data-item-price="{{ p.precio | remove: '€' }}"
       data-item-url="/productos/{{ p.slug }}.html"
       data-item-description="{{ p.descripcion }}">
-      A\u00f1adir al carrito
+      Añadir al carrito
     </button>
   </li>
 {% endfor %}
