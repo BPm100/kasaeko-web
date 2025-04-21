@@ -1,0 +1,96 @@
+/* Mejoras para productos en KASAÉKO */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Estilo del header */
+header {
+  background-color: #88B04B; /* Verde oliva */
+  padding: 1rem 2rem;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Estilo para la lista de productos */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+ul li img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+ul li h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #4CAF50; /* verde bonito */
+}
+
+ul li p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Botón añadir al carrito */
+.snipcart-add-item {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.snipcart-add-item:hover {
+  background-color: #43A047;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+Add professional styles for products.
